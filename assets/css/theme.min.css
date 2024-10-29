@@ -19508,7 +19508,7 @@ video {
   width: 3rem;
 }
 .btn-scroll-top:after {
-  color: var(--bs-primary);
+  color: #dd1e26;
   content: "\f145";
   font-family: bootstrap-icons !important;
   font-size: 1.5rem;
@@ -19533,7 +19533,7 @@ video {
   fill: none;
 }
 .btn-scroll-top svg.progress-square path {
-  stroke: var(--bs-primary);
+  stroke: #dd1e26;
   stroke-width: 2;
   box-sizing: border-box;
   transition: all 0.2s linear;
