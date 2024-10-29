@@ -52,6 +52,25 @@
       object-fit: cover; /* Ajusta las imágenes para que llenen el área sin distorsionarse */
     }
 
+    /* Ajustes de ancho y eliminación de desplazamiento */
+.no-scroll {
+  overflow: hidden; /* Evita cualquier barra de desplazamiento */
+}
+
+.swiper-container {
+  padding: 0 15px; /* Agrega algo de espacio interno */
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: auto; /* Permite que el carrusel se ajuste sin desbordarse */
+}
+
+
 </style>
   <body>
     <nav class="navbar navbar-expand-lg  transparent navbar-transparent navbar-dark">
@@ -362,14 +381,14 @@
 
 
     <!-- Controles de navegación -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Anterior</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Siguiente</span>
-    </button>
+    </button> -->
   </div>
 
 
@@ -392,307 +411,93 @@
                 </div>
             </section>
             <!--speak with expert-->
-    
-            <!--Event tickets start-->
+
+
+            <!-- Categorias -->
+              
             <section class="py-xl-9 py-5 bg-gray-100">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 offset-md-2">
-                            <div class="text-center mb-xl-9 mb-5">
-                                <h2 class="mb-3">Event tickets</h2>
-                                <p class="mb-0 lead px-xl-7">The price will increase as
-                                    the conference approaches. Grab your ticket today.
-                                    Number of tickets is limited.</p>
-                            </div>
-                        </div>
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <div class="text-center mb-xl-9 mb-5">
+                        <h2 class="mb-3">Categorias</h2>
+                        <p class="mb-0 lead px-xl-7">Envía los más hermosos arreglos florales con las más bellas flores de Guatemala.</p>
+                      </div>
                     </div>
-                    <!-- Pricing Style 3 -->
-                    <div class="table-responsive-lg">
-                        <div class="row flex-nowrap me-5 me-lg-0">
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <!--card-->
-                                <div class="card bg-gray-200 border-0 p-2 mb-5 mb-xl-0">
-                                    <div class="card-body bg-white shadow rounded-2">
-                                        <div class="mb-5">
-                                            <h3 class="h6 mb-3">All Access</h3>
-                                            <h2 class="d-flex align-items-center">
-                                                <span class="text-dark">$9.00*</span>
-                                                <del class="text-body-tertiary ms-1">$29</del>
-                                            </h2>
-                                        </div>
-                                        <div class="mb-5">
-                                            <span class="small">200 Seats
-                                                Remaining</span>
-                                            <div class="progress mt-2" role="progressbar" aria-label="Event Ticket"
-                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                                style="height: 8px">
-                                                <div class="progress-bar bg-primary bg-opacity-50" style="width: 70%"></div>
-                                            </div>
-                                        </div>
-    
-                                        <ul class="list-unstyled">
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">1 Day Access</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">Breakfast, Lunch &
-                                                    party</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">Live video online
-                                                    Access</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-x-circle-fill text-danger"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
-                                                </svg>
-                                                <span class="ms-3">Speaker Meet and
-                                                    Greets</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-x-circle-fill text-danger"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
-                                                </svg>
-                                                <span class="ms-3">Get a
-                                                    Certificate</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-x-circle-fill text-danger"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
-                                                </svg>
-                                                <span class="ms-3">Assigned Inbound
-                                                    Expert</span>
-                                            </li>
-                                        </ul>
-                                        <div class="d-grid mt-5">
-                                            <a href="#" class="btn btn-outline-primary">Register
-                                                Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--card-->
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <!--card-->
-                                <div class="card bg-primary-subtle border-0 p-2 mb-5 mb-xl-0">
-                                    <div class="card-body bg-white shadow rounded-2">
-                                        <div class="mb-5">
-                                            <h3 class="h6 mb-3">VIP</h3>
-                                            <h2 class="d-flex align-items-center">
-                                                <span class="text-dark">$49.00*</span>
-                                                <del class="text-body-tertiary ms-1">$129</del>
-                                            </h2>
-                                        </div>
-                                        <div class="mb-5">
-                                            <span class="small">67 Seats
-                                                Remaining</span>
-                                            <div class="progress mt-2" role="progressbar" aria-label="Basic example"
-                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                                style="height: 8px">
-                                                <div class="progress-bar bg-primary bg-opacity-50" style="width: 90%"></div>
-                                            </div>
-                                        </div>
-    
-                                        <ul class="list-unstyled">
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">3 Day Access</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">Breakfast, Lunch &
-                                                    party</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">Live video online
-                                                    Access</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">Speaker Meet and
-                                                    Greets</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">Get a
-                                                    Certificate</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-x-circle-fill text-danger"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
-                                                </svg>
-                                                <span class="ms-3">Assigned Inbound
-                                                    Expert</span>
-                                            </li>
-                                        </ul>
-                                        <div class="d-grid mt-5">
-                                            <a href="#" class="btn btn-primary">Register</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--card-->
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <!--card-->
-                                <div class="card bg-gray-200 border-0 p-2 mb-xl-0">
-                                    <div class="card-body bg-white shadow rounded-2">
-                                        <div class="mb-5">
-                                            <h3 class="h6 mb-3">VIP + VIP Plus</h3>
-                                            <h2 class="d-flex align-items-center">
-                                                <span class="text-dark">$89.00*</span>
-                                                <del class="text-body-tertiary ms-1">$199</del>
-                                            </h2>
-                                        </div>
-                                        <div class="mb-5">
-                                            <span class="small">234 Seats
-                                                Remaining</span>
-                                            <div class="progress mt-2" role="progressbar" aria-label="Basic example"
-                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                                style="height: 8px">
-                                                <div class="progress-bar bg-primary bg-opacity-50" style="width: 70%"></div>
-                                            </div>
-                                        </div>
-    
-                                        <ul class="list-unstyled">
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">3 Day Access</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">Breakfast, Lunch &
-                                                    party</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">Live video online
-                                                    Access</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">Speaker Meet and
-                                                    Greets</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">Get a
-                                                    Certificate</span>
-                                            </li>
-                                            <li class="mb-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                    fill="currentColor" class="bi bi-check-circle-fill text-success"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                </svg>
-                                                <span class="ms-3">Assigned Inbound
-                                                    Expert</span>
-                                            </li>
-                                        </ul>
-                                        <div class="d-grid mt-5">
-                                            <a href="#" class="btn btn-outline-primary">Get the
-                                                VIP plus tickets</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--card-->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="text-center mt-5">
-                                <small>* Additional 5% VAT charge applies to
-                                    individuals, companies VAT non-payers, and companies
-                                    in the country.</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--Event tickets end-->
+                  </div>
+              
+                  <!-- Swiper Container -->
+                  <div class="swiper-container no-scroll">
+                    <div class="swiper-wrapper">
 
+                      <!-- Tarjeta 1 -->
+                      <div class="swiper-slide">
+                        <div class="card bg-white border-0 p-0 text-center">
+                          <!-- Contenido de la tarjeta 3 -->
+                          <img src="assets/images/categoria-flores/2.jpg" alt="">
+                        <h2 class="h4 mb-3">Combo Deleite</h2>
+                        <p class="mb-1">Deliciosa combinación de rosas enamoradas en tono rojo intenso, follajes verdes, empaque de ramo, tarjeta personalizada y una exquisita caja de chocolates europeos.</p>
+                        <h2 class="h5 py-2">PRECIO</h2>
+                          <p>Q399.00 – Q599.00</p>
+                          <a href="https://www.floreguate.com/producto/ramo-de-rosas-y-chocolates-deleite/"
+                        class="bg-instagram text-white  text-uppercase">COMPRAR</a>
+                        </div>
+                      </div>
+
+                       <!-- Tarjeta 2 -->
+                      <div class="swiper-slide">
+                        <div class="card bg-white border-0 p-0 text-center">
+                          <!-- Contenido de la tarjeta 3 -->
+                          <img src="assets/images/categoria-flores/2.jpg" alt="">
+                        <h2 class="h4 mb-3">Combo Deleite</h2>
+                        <p class="mb-1">Deliciosa combinación de rosas enamoradas en tono rojo intenso, follajes verdes, empaque de ramo, tarjeta personalizada y una exquisita caja de chocolates europeos.</p>
+                        <h2 class="h5 py-2">PRECIO</h2>
+                          <p>Q399.00 – Q599.00</p>
+                          <a href="https://www.floreguate.com/producto/ramo-de-rosas-y-chocolates-deleite/"
+                        class="bg-instagram text-white  text-uppercase">COMPRAR</a>
+                        </div>
+                      </div>
+
+                       <!-- Tarjeta 3 -->
+                      <div class="swiper-slide">
+                        <div class="card bg-white border-0 p-0 text-center">
+                          <!-- Contenido de la tarjeta 3 -->
+                          <img src="assets/images/categoria-flores/2.jpg" alt="">
+                        <h2 class="h4 mb-3">Combo Deleite</h2>
+                        <p class="mb-1">Deliciosa combinación de rosas enamoradas en tono rojo intenso, follajes verdes, empaque de ramo, tarjeta personalizada y una exquisita caja de chocolates europeos.</p>
+                        <h2 class="h5 py-2">PRECIO</h2>
+                          <p>Q399.00 – Q599.00</p>
+                          <a href="https://www.floreguate.com/producto/ramo-de-rosas-y-chocolates-deleite/"
+                        class="bg-instagram text-white  text-uppercase">COMPRAR</a>
+                        </div>
+                      </div>
+
+                       <!-- Tarjeta 4 -->
+                      <div class="swiper-slide">
+                        <div class="card bg-white border-0 p-0 text-center">
+                          <!-- Contenido de la tarjeta 3 -->
+                          <img src="assets/images/categoria-flores/2.jpg" alt="">
+                        <h2 class="h4 mb-3">Combo Deleite</h2>
+                        <p class="mb-1">Deliciosa combinación de rosas enamoradas en tono rojo intenso, follajes verdes, empaque de ramo, tarjeta personalizada y una exquisita caja de chocolates europeos.</p>
+                        <h2 class="h5 py-2">PRECIO</h2>
+                          <p>Q399.00 – Q599.00</p>
+                          <a href="https://www.floreguate.com/producto/ramo-de-rosas-y-chocolates-deleite/"
+                        class="bg-instagram text-white  text-uppercase">COMPRAR</a>
+                        </div>
+                      </div>
+                      
+
+
+
+                    </div>
+                    <!-- Paginación y controles de navegación -->
+                    <!-- <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                  </div>
+                </div>
+              </section>
+              
             <!-- Categorias -->
             
 
@@ -704,6 +509,7 @@
                 <div class="text-center mb-xl-7 mb-5">
                     <h2 class="h1 mb-3">Nuestros últimas publicaciones</h2>
                     <p class="mb-0">Nuestro blog te fascinará, tiene consejos, ideas romanticas, mensajes para enamorar entre otros artículos que te pueden interesar.</p>
+                    
                 </div>
             </div>
         </div>
@@ -1019,6 +825,29 @@
         />
       </svg>
     </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true, // Activa el loop
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
+});
+
+    </script>
 
 
     <!-- Libs JS -->
