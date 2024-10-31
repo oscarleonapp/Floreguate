@@ -75,6 +75,10 @@
         background: #dd1e26;
     }
 
+    .text-floreguate-red{
+        color: #dd1e26;
+    }
+
     /* Prevent swiper container from overflowing */
     .swiper-container.swiper-categories {
         overflow: hidden;
@@ -236,9 +240,33 @@
                         <li class="nav-item">
                             <a class="nav-link disabled" aria-disabled="true">Ofertados</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Mi cuenta</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mi cuenta</a>
+                            <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown">
+                               <a class="dropdown-item mb-3 text-body" href="./docs/index.html">
+                                  <div class="d-flex align-items-center">
+                                     <i class="bi bi-file-text fs-4 text-primary"></i>
+                                     <div class="ms-3 lh-1">
+                                        <h5 class="mb-1">Documentations</h5>
+                                        <p class="mb-0 fs-6">Browse the all documentation</p>
+                                     </div>
+                                  </div>
+                               </a>
+    
+                               <a class="dropdown-item text-body" href="./docs/changelog.html">
+                                  <div class="d-flex align-items-center">
+                                     <i class="bi bi-clipboard fs-4 text-primary"></i>
+                                     <div class="ms-3 lh-1">
+                                        <h5 class="mb-1">
+                                           Changelog
+                                           <span class="text-primary ms-1"></span>
+                                        </h5>
+                                        <p class="mb-0 fs-6">See what's new</p>
+                                     </div>
+                                  </div>
+                               </a>
+                            </div>
+                         </li>
                     </ul>
                     <!-- 
                 <form class="d-flex mt-3 mt-lg-0" role="search">
@@ -368,10 +396,49 @@
                                 <a class="nav-link disabled" aria-disabled="true"
                                     style="color: white !important;">Ofertados</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true" style="color: white !important;">Mi
-                                    cuenta</a>
-                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white !important;">Mi cuenta</a>
+                                <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item text-body" href="./docs/changelog.html">
+                                        <div class="d-flex align-items-center">
+                                           <i class="bi bi-person-circle fs-4 text-floreguate-red"></i>
+                                           <div class="ms-3 lh-1">
+                                              <h5 class="mb-1">
+                                                  Ingresar a mi cuenta
+                                                 <span class="text-primary ms-1"></span>
+                                              </h5>
+                                              <!-- <p class="mb-0 fs-6">See what's new</p> -->
+                                           </div>
+                                        </div>
+                                     </a>
+        
+                                   <a class="dropdown-item text-body" href="./docs/changelog.html">
+                                      <div class="d-flex align-items-center">
+                                         <i class="bi bi-bag-fill fs-4 text-floreguate-red"></i>
+                                         <div class="ms-3 lh-1">
+                                            <h5 class="mb-1">
+                                                Política de devoluciones y reembolsos
+                                               <span class="text-primary ms-1"></span>
+                                            </h5>
+                                            <!-- <p class="mb-0 fs-6">See what's new</p> -->
+                                         </div>
+                                      </div>
+                                   </a>
+                                          
+                                   <a class="dropdown-item text-body" href="./docs/changelog.html">
+                                    <div class="d-flex align-items-center">
+                                       <i class="bi bi-shield-lock-fill fs-4 text-floreguate-red"></i>
+                                       <div class="ms-3 lh-1">
+                                          <h5 class="mb-1">
+                                            Política de privacidad
+                                             <span class="text-primary ms-1"></span>
+                                          </h5>
+                                          <!-- <p class="mb-0 fs-6">See what's new</p> -->
+                                       </div>
+                                    </div>
+                                 </a>
+                                </div>
+                             </li>
                         </ul>
                         <!-- 
             <form class="d-flex mt-3 mt-lg-0" role="search">
