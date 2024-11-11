@@ -4974,9 +4974,9 @@ textarea.form-control.is-invalid {
   }
 }
 .btn:hover {
-  background-color: var(--bs-btn-hover-bg);
-  border-color: var(--bs-btn-hover-border-color);
-  color: var(--bs-btn-hover-color);
+  background-color: #4f1964;
+  border-color: white;
+  color: white;
 }
 .btn-check + .btn:hover {
   background-color: var(--bs-btn-bg);
