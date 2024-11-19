@@ -96,9 +96,45 @@
 .ocultar-logo{
     width: 0px;
 }
-.ocultar-toggle{
-    display: none;
-}
+.offcanvas.offcanvas-nav {
+    width: 100% !important; /* Ocupa el 100% del ancho de la pantalla */
+    max-width: 100% !important; /* Asegura que no tenga un límite de ancho */
+  }
+
+  .offcanvas-header {
+    justify-content: space-between; /* Espaciado entre el logo y el botón de cerrar */
+    padding: 1rem; /* Ajusta el espacio */
+  }
+
+  .offcanvas-body {
+    padding: 1rem; /* Ajusta el espaciado interior */
+    text-align: center; /* Centra los elementos dentro del menú */
+  }
+
+  .offcanvas-body ul {
+    padding: 0; /* Quita el padding de la lista */
+    margin: 0; /* Quita los márgenes de la lista */
+    list-style: none; /* Elimina los puntos de la lista */
+  }
+
+  .offcanvas-body ul li {
+    margin: 0.5rem 0; /* Espaciado vertical entre los elementos */
+  }
+
+  .offcanvas-body a {
+    display: block; /* Asegura que los enlaces ocupen todo el ancho */
+    text-decoration: none; /* Elimina el subrayado */
+    color: #000; /* Ajusta el color del texto */
+    padding: 0.5rem 0; /* Espaciado interno */
+  }
+
+  .offcanvas-body a:hover {
+    background-color: #f8f9fa; /* Cambia el color de fondo al pasar el cursor */
+  }
+
+  .ocultar-toggle {
+    display: none; /* Opcional: Oculta el botón del menú hamburguesa si es necesario */
+  }
 }
 </style>
 
